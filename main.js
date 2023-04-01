@@ -18,37 +18,10 @@ var title1 = document.createElement('h3');
 var title2 = document.createElement('h3');
 var title3 = document.createElement('h3');
 
-var inputRadix = document.querySelector('#iR');
-var outputRadix = document.querySelector('#aR');
-
-var radixblock=document.getElementById('Radix');
 var CustomTextRadix=document.createElement('h4');
 var Custom_InR=document.getElementById('InRx');
 var Custom_outR=document.getElementById('OutRx');
 var inputR,outputR;
-
-
-
-radixblock.style.visibility='hidden';
-
-showMethod.addEventListener('click', () => {
-   
-   methods.appendChild(showex);
-})
-
-CustomRadix.addEventListener('click',()=>{
-   radixblock.style.visibility= radixblock.style.visibility=='visible'?'hidden':'visible';
-   inputRadix.disabled=radixblock.style.visibility=='visible'?true:false;
-   outputRadix.disabled=radixblock.style.visibility=='visible'?true:false;
-   CustomRadix.style.color= inputRadix.disabled==true?'rgb(186, 27, 186)':'black';
-   if(inputRadix.disabled==true){
-      Custom_InR.value='';
-      Custom_outR.value='';
-   }
- 
-})
-
-
 getResult.addEventListener('click', () => {
    while (showex.lastChild) {
       showex.removeChild(showex.lastChild);
@@ -60,22 +33,11 @@ getResult.addEventListener('click', () => {
 })
 //when user click button then applied method.
 getResult.addEventListener('click', () => {
-   if(radixblock.style.visibility=='hidden'){
-      inputR=inputRadix.value;
-      outputR=outputRadix.value;
-   }
-   else{
-      inputR=Custom_InR.value;
-      outputR=Custom_outR.value;
-      
-   }
- 
-   
-   answer.ariaPlaceholder = "Calculating";
+   inputR=Custom_InR.value;
+   outputR=Custom_outR.value;
    var number = input.value;
+   inputR=inputR==''?'10':inputR;
    Calculate(number, inputR,outputR);
- 
-
 })
 function Calculate(num, iR, oR) {
    
@@ -168,12 +130,12 @@ function Calculate(num, iR, oR) {
    }
    else {
       
-      //input.value = 'Wrong input';
+      
       input.style.backgroundColor = 'rgb(203, 64, 64)';
-      input.style.color='white';
-      // alert("Wrong Input");
+      
       answer.innerHTML='Wrong Input';
    }
+   methods.appendChild(showex);
 
 }
 
@@ -259,7 +221,7 @@ function ansCalculate(inp, rN) {
       s+='0';
       answer.innerHTML=s+s2;
    }else{
-      title.innerHTML = 'Decimal to ' + (isNaN(iR)?document.querySelector('#aR').value:'Input Radix') + ' Method';
+      title.innerHTML = 'Decimal to Output Radix Method';
    showex.appendChild(title);
    while (inp > 0) {
       let remider = inp % rN;
@@ -310,6 +272,7 @@ function getNumber(num) {
         
    }
 }
+
 function getchar(remider) {
    switch (remider) {
       case 10:
@@ -329,7 +292,6 @@ function getchar(remider) {
 
       case 15:
          return 'f';
-
       default:
 
          break;
