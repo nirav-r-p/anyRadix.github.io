@@ -67,9 +67,7 @@ function Calculate(num, iR, oR) {
 
             title3.innerHTML = 'For Fractional Part';
             showex.appendChild(title3);
-            console.log(num,Math.floor(fractionalint));
             var inpf = (num - Math.floor(fractionalint)).toPrecision(num.toString().split(".")[1].length).toString();
-            console.log(inpf);
             for (let i = 2; i < inpf.length; i++) {
 
                const element = inpf[i];
@@ -87,7 +85,6 @@ function Calculate(num, iR, oR) {
             title3.innerHTML = 'For Fractional Part';
             showex.appendChild(title3);
             var inpf = nf[1];
-            console.log(inpf);
             for (let i = 1; i <= inpf.length; i++) {
 
                const element = inpf[i - 1];
