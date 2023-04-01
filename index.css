@@ -140,7 +140,8 @@ textarea {
     background-color:  white;
 }
 #Radix{
-    margin: 10px;
+    margin-top: 15px;
+    
 }
 .inputArea {
     display: flex;
@@ -159,16 +160,19 @@ textarea {
     color: rgb(82, 174, 183);
 }
 
+input[type=text]:focus {
+    color: lightblue;
+    border-bottom: 1px solid lightblue;
+}
 
-
-#method:hover {
+#method{
     cursor: pointer;
-    color: rgb(82, 174, 183);
-
+    /* color: rgb(82, 174, 183); */
+   margin-top: 20px;
 }
 
 #InRx {
-    padding: 4px;
+    /* padding: 4px; */
    
     border: none;
     border-bottom: 1px solid #555151;
@@ -177,8 +181,8 @@ textarea {
 
 #OutRx {
     /* margin-left: 8px; */
-    padding: 4px;
-    
+    /* padding: 4px; */
+    float: right;
     border: none;
     border-bottom: 1px solid #555151;
     outline: none;
@@ -192,6 +196,12 @@ textarea {
 @media only screen and (max-width: 600px) {
     #CustomRadix{
         font-size: 16px;
+    }
+    #OutRx,#InRx{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 100%;
+        float: none;
     }
     .fade-in-text {
     
@@ -215,11 +225,33 @@ textarea {
     
 }
 
+
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #OutRx,#InRx{
+        
+        float: none;
+        
+        
+    }
+   
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    #OutRx,#InRx{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 40%;
+        float: none;
+    }
+    #OutRx{
+        float: right;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
