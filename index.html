@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Radix Convertor</a>
+        <a class="navbar-brand" href="#">Radix Converter</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#CalculatePart">Convertor</a>
+                    <a class="nav-link" href="#CalculatePart">Convetor</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -33,9 +33,9 @@
         <div class="container" style="padding: 50px; height: 600px;">
             <h1 class="fade-in-text text-center">Welcome!</h1>
             <div class="fade-in-text text-center" style="height:inherit; margin-top: 120px; padding: 8px;">
-                <h5>" This website can be use convert any Radix to any Radix Number System.</h5>
-                <h5>You can see the method of conversion to one number system to other. just click on show method.</h5>
-                <h5>Website support floating point number conversion."</h5>
+                <h5>" This wabsite use to convert any Radix to any Radix Number System.</h5>
+                <h5>You can see the method of conversion to one number system to other.</h5>
+                <h5>Website support floating point number convrsion."</h5>
             </div>
         </div>
         <img src="wave1.png" class="bottom-img">
@@ -50,31 +50,17 @@
                         id="givenNumber"></textarea>
                     <label>Answer</label>
                     <textarea readonly type="text" class="form-control" rows="2" placeholder="Answer"
-                        id="answer"></textarea>
-                    <div class="list">
-                        <select name="inputRadix" id="iR">
-                            <option value="decimal">decimal</option>
-                            <option value="binary">binary</option>
-                            <option value="hex">hex</option>
-                            <option value="octal">octal</option>
-                        </select>
-                        <select name="ansRadix" id="aR">
-                            <option value="decimal">decimal</option>
-                            <option value="binary">binary</option>
-                            <option value="hex">hex</option>
-                            <option value="octal">octal</option>
-                        </select>
-                    </div>
-                    <button id="getResult">Calculate</button>
+                        id="answer"></textarea> 
+            
                     <div id="Cr">
                         <h4 id="CustomRadix">Custom Radix(between 1 to 16)?</h4>
 
                         <div id="Radix">
-                            <input id="InRx" type="text" placeholder="Input Radix">
+                            <input id="InRx" type="text" placeholder="default value 10 (decimal)">
                             <input id="OutRx" type="text" placeholder="Output Radix">
                         </div>
                     </div>
-                    <h5 id="method">Show Method</h5>
+                    <button id="getResult">Calculate</button>
                 </div>
                 <div class="container2">
                     <div id="methods"></div>
