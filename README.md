@@ -1,6 +1,6 @@
 # Number System conversion 
 
-The Number Conversion System is a command-line interface (CLI) application that allows users to convert numbers from one numeral system to another. It currently supports the following numeral systems:
+The Number Conversion System  application that allows users to convert numbers from one numeral system to another. It currently supports the following numeral systems:
 * Binary (base 2)
 * Decimal (base 10)
 * Octal (base 8)
