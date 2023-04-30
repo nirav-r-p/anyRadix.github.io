@@ -74,7 +74,7 @@ function Calculate(num, iR, oR) {
                
                changNF += ((isNaN(inpf[i]) ? getNumber(inpf[i]) : inpf[i]) * (1 / Math.pow(inputRadix, i - 1)));
                
-               var frs = element + '*' + '1/' + Math.pow(inputRadix, i - 1) + '=' + element * (1 / Math.pow(inputRadix, i - 1));
+               var frs = element + ' * ' + '1/' + Math.pow(inputRadix, i - 1) + ' = ' + element * (1 / Math.pow(inputRadix, i - 1));
                let h_tage = document.createElement('h5');
                h_tage.innerHTML = frs;
                showex.appendChild(h_tage);
@@ -91,7 +91,7 @@ function Calculate(num, iR, oR) {
 
                changNF += ((isNaN(element) ? getNumber(element) : element) * (1 / Math.pow(inputRadix, i)));
 
-               var frs = element + '*' + '1/' + Math.pow(inputRadix, i) + '=' + (isNaN(element) ? getNumber(element) : element) * (1 / Math.pow(inputRadix, i));
+               var frs = element + ' * ' + '1/' + Math.pow(inputRadix, i) + ' = ' + (isNaN(element) ? getNumber(element) : element) * (1 / Math.pow(inputRadix, i));
                let h_tage = document.createElement('h5');
                h_tage.innerHTML = frs;
                showex.appendChild(h_tage);
@@ -103,7 +103,7 @@ function Calculate(num, iR, oR) {
          
          for (var i = 0; i < num2.length; i++) {
             //for output.
-            let stringmethod = num2[i] + "*" + Math.pow(inputRadix, num2.length - i - 1) + '=' + [(isNaN(num2[i]) ? getNumber(num2[i]) : num2[i]) * Math.pow(inputRadix, num2.length - i - 1)];
+            let stringmethod = num2[i] + " * " + Math.pow(inputRadix, num2.length - i - 1) + ' = ' + [(isNaN(num2[i]) ? getNumber(num2[i]) : num2[i]) * Math.pow(inputRadix, num2.length - i - 1)];
             let h_tage = document.createElement('h5');
             h_tage.innerText = stringmethod;
             showex.appendChild(h_tage);
@@ -192,7 +192,7 @@ function ansCalculate(inp, rN) {
          let string_fra = f.toPrecision(5);
 
          f = f * rN;
-         string_fra += ('*' + rN + '=' + f.toPrecision(5));
+         string_fra += (' * ' + rN + ' = ' + f.toPrecision(5));
          let h_tage = document.createElement('h5');
 
          var nf = Math.floor(f);
