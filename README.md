@@ -19,6 +19,6 @@ This website support floating point conversion.
 
 ![Number-conversion1](https://user-images.githubusercontent.com/102569690/235364086-8e26c40b-8ac3-4589-b795-6c02e6163cd8.png)
 
-Hear also right side of screen you can see full conversion in step wish.
+Hear also right side of screen you can see full conversion in step wise.
 <br>
 In near future I also add conversion for nagetive number system and compliment of number system(ex: 1s ,2s compliment)
