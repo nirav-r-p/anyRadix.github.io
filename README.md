@@ -21,4 +21,4 @@ This website support floating point conversion.
 
 Hear also right side of screen you can see full conversion in step wise.
 <br>
-In near future I also add conversion for nagetive number system and compliment of number system(ex: 1s ,2s compliment)
+In near future I also add conversion for nagetive number system and compliment of number system(ex: 1's ,2's compliment)
